@@ -128,64 +128,20 @@
 
   .hero-right {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    padding: 4rem 5rem 4rem 2rem;
+    padding: 4rem 4rem 0 2rem;
     animation: fadeUp 0.8s 0.15s ease both;
   }
-  .hero-card {
-    background: var(--warm-white);
-    border: 1.5px solid var(--border);
-    border-radius: 24px;
-    padding: 2.5rem;
+  .hero-photo {
     width: 100%;
-    max-width: 360px;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.06);
-    position: relative;
+    max-width: 420px;
+    border-radius: 24px 24px 0 0;
+    object-fit: cover;
+    object-position: top;
+    height: 580px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
   }
-  .hero-card::before {
-    content: '';
-    position: absolute; top: -1px; left: 2rem; right: 2rem; height: 3px;
-    background: linear-gradient(90deg, var(--accent), var(--green));
-    border-radius: 0 0 4px 4px;
-  }
-  .avatar {
-    width: 72px; height: 72px;
-    background: linear-gradient(135deg, var(--accent-light), var(--green-light));
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Fraunces', serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 1.25rem;
-  }
-  .hero-card h3 {
-    font-family: 'Fraunces', serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
-  .hero-card .role {
-    font-size: 0.825rem;
-    color: var(--muted);
-    margin-bottom: 1.5rem;
-  }
-  .stat-row {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
-    border-top: 1px solid var(--border);
-    padding-top: 1.25rem;
-  }
-  .stat { display: flex; flex-direction: column; }
-  .stat-n {
-    font-family: 'Fraunces', serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--ink);
-    line-height: 1;
-  }
-  .stat-label { font-size: 0.75rem; color: var(--muted); margin-top: 0.2rem; }
 
   /* SECTIONS */
   section { padding: 6rem 6rem; }
@@ -408,29 +364,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-card">
-      <div class="avatar">V</div>
-      <h3>Vedant</h3>
-      <p class="role">Candidate for Team Lead · [Your Team Name]</p>
-      <div class="stat-row">
-        <div class="stat">
-          <span class="stat-n">3+</span>
-          <span class="stat-label">Years on team</span>
-        </div>
-        <div class="stat">
-          <span class="stat-n">12</span>
-          <span class="stat-label">Projects shipped</span>
-        </div>
-        <div class="stat">
-          <span class="stat-n">5</span>
-          <span class="stat-label">Teammates backed</span>
-        </div>
-        <div class="stat">
-          <span class="stat-n">1</span>
-          <span class="stat-label">Goal: this team wins</span>
-        </div>
-      </div>
-    </div>
+    <img src="./photo.png" alt="Vedant" class="hero-photo" />
   </div>
 </section>
 
